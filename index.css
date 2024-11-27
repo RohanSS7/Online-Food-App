@@ -1,0 +1,209 @@
+body {
+    margin: auto;
+    max-width: 600px;
+} 
+
+header {
+    background-image: url(/pizza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 45px 0 90px;
+    background-position: center -120px
+}
+
+/* typology */
+
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+    font-family: "Smythe", system-ui;
+}
+
+h1,
+h2 {
+    color: white;
+    font-weight: 400;
+    text-align: left;
+    margin: 0;
+    padding-left: 45px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 21px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Menu-List section */
+
+.food-details h3,
+.food-details p, 
+.food-details h4 {
+    display: flex;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    border-bottom: 1px solid grey; 
+    padding: 10px;
+    margin: 0 20px;
+}
+
+#container button {
+    border-radius: 50%;
+    color: #3C3C3C;
+    background: #DEDEDE;
+    border: 0;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.cover-emoji {
+    
+    font-size: 78px;
+    margin-right: 20px; 
+}
+
+.food-details {
+    flex-grow: 1; 
+}
+
+
+/* Order-List section */
+
+li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;  
+}
+
+.remove-btn {
+    border: none;
+    background: none;
+    color: #BBBBBB;
+    cursor: pointer;
+    margin-left: 10px; 
+    font-size: 12px;
+}
+
+li span.price {
+    margin-left: auto; 
+    padding-left: 20px; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#submit-order {
+    display: block;
+    margin: 50px auto; 
+    width: 508px; 
+    height: 60px;
+    padding: 18px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #16DB99; 
+    color: white;
+    border: none;
+    border-radius: 5px; 
+}
+
+#receipt {
+    margin: 20px;
+    padding: 10px;
+}
+
+#receipt-list ul {
+    padding-left: 0;
+}
+
+.total-price {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-top: 10px;
+    border-top: 2px solid #393333;
+    padding-top: 10px;
+}
+    
+/* Bank Form */
+
+.bank-details h3,
+#pay-btn {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bank-details h3 {
+    margin: 47px;
+}
+
+
+.bank-details {
+    text-align: center;
+    display: flex;
+    width: 480px;
+    height: 500px;
+    flex-direction: column; 
+    box-shadow: 5.19px 5.19px 255.44px 0px #00000080;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: white;
+}
+
+.input-box {
+    width: 430px;
+    height: 71.3px;
+    border: 1px solid #757575;
+    border-radius: 4px;
+    align-self: center;
+    margin-bottom: 20px;
+
+}
+
+input {
+    padding-left: 20px; 
+}
+
+::placeholder {
+    color: #757575;
+}
+
+#pay-btn {
+    width: 430px;
+    height: 71.3px;
+    align-self: center;
+    margin: 40px 0 30px;
+    background-color: #16DB99; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+#submitted {
+    background-color: #ECFDF5;
+    margin: 20px;
+    padding: 40px;
+    color: #065F46;
+    text-align: center;
+}
